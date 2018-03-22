@@ -2,6 +2,7 @@
 // Key words: Return all possible times
 // Idea: separate into hours/mins
 //       for each pos, we have choices of 1,2,4,8/1,2,4,8,16,32
+// 5ms (2ms) 
 
 import java.util.List;
 import java.util.ArrayList;
