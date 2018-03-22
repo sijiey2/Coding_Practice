@@ -1,6 +1,4 @@
 # Coding_Practice
-leetcode (Java)
-
 <b>Topics:</b>
 
 - Array</br>
