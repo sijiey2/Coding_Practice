@@ -1,0 +1,18 @@
+BackTracking Problems:
+
+-What problems? 
+'return all possible results'
+
+-Thinking processes: 
+for each position, try ...
+(for next position, try ...)
+ 
+-Deal with duplicates:
+have 'start': 
+      Arrays.sort();
+      i > start && num[i] == num[i - 1];
+      i > 0 && num[i] == num[i - 1]; 
+no 'start': 
+      visted[i];
+      contains(num[i]);
+    
