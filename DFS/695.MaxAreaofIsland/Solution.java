@@ -1,8 +1,9 @@
-// DFS (Recursion)
-// 40ms (31ms)
+// DFS -R
+// 43ms (okay) -31ms
 
 public class Solution {
 	int max = 0;
+	int[][] dirs = {{-1, 0},{1, 0},{0,-1},{0,1}};
 
 	public int maxAreaOfIsland(int[][] grid) {
 		if (grid == null || grid.length == 0) {
@@ -28,8 +29,11 @@ public class Solution {
 		}
 
 		grid[x][y] = 0;
-		return 1 + explore(grid, x + 1, y) + explore(grid, x - 1, y) + 
-				explore(grid, x, y + 1) + explore(grid, x, y - 1);  
+		int result = 1;
+		for (int i = 0; i < 4; i++) {
+			result += explore(grid, x + dirs[i][0], y + dirs[i][1]);
+		}
+		return result;
 	}
 
 	public static void main(String[] args) {
