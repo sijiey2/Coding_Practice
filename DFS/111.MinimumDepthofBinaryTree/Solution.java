@@ -1,4 +1,4 @@
-// Recursion 
+// DFS (Recursion)
 // 1ms(okay) -0ms
 
 class TreeNode {
