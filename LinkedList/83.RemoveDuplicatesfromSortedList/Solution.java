@@ -1,4 +1,4 @@
-// LL (Recursion)
+// LL (Non-recursion)
 // 2ms (1ms)
 
 class ListNode {
