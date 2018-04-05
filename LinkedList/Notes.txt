@@ -1,0 +1,18 @@
+LinkedList Problems:
+
+cur = cur.next (move)
+cur.next = ... (update)
+dummy node
+
+-get previous: 
+use cur.next (cur is the prev)
+keep a pre pointer (save the prev position)
+
+-walker/runner
+get mid
+get cycle
+
+-sub link
+get the end, set the end.next = null, save the rest
+
+
