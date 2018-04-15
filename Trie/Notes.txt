@@ -1,0 +1,32 @@
+Trie Problems:
+
+-create TrieNode class
+class TrieNode {
+  TrieNode[] children = new TrieNode[26];
+  String word = "";
+}
+
+-add word:
+TrieNode cur = root;
+for (char c: word.toCharArray()) {
+  if (cur.children[c - 'a'] == null) {
+    cur.children[c - 'a'] = new TrieNode();
+  }
+  cur = cur.children[c - 'a'];
+}
+cur.word = word;
+
+-get word:
+TrieNode cur = root;
+for (char c: word.toCharArra()) {
+  if (cur.children[c - 'a'] == null) {
+    return false;
+  }
+  cur = cur.children[c - 'a'];
+}
+return cur.word.equals(word);
+
+-explore:
+recursion
+for (int i = 0; i < 26; i++) {
+}
