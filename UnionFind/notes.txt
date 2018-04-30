@@ -1,0 +1,22 @@
+Union-Find Problems:
+(find: find its original parent (root parent))
+
+1. create find func.
+
+public int find(int num, Map<Integer, Integer> map) {
+		if (map.get(num) == num) {
+			return num;
+		}
+		return find(map.get(num), map);
+}
+(if int, then can also use int[] bucket instead of hashmap)
+
+2. create & update map
+
+create: map.put(a, a) / map.put(b, b);
+update: map.put(find(a, map), find(b, map));
+
+3. union
+for each element, find(e, map)
+
+
