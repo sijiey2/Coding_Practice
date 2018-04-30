@@ -2,8 +2,10 @@
 <b>Topics:</b>
 
 - Array</br>
-- Backtracking</br>
+- BackTracking</br>
 - BFS</br>
 - DFS</br>
 - LinkedList</br>
 - Tree</br>
+- Trie</br>
+- UnionFind</br>
