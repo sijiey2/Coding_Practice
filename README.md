@@ -5,6 +5,7 @@
 - BackTracking</br>
 - BFS</br>
 - DFS</br>
+- Heap</br>
 - LinkedList</br>
 - Tree</br>
 - Trie</br>
